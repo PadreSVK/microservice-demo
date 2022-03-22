@@ -1,0 +1,10 @@
+{
+    "$schema": "https://gist.githubusercontent.com/PadreSVK/3119cbd2206f0fc159d2ab201bfc3c44/raw/4803e2d2397fa1b4cdd00d8a801be46243fbb6da/ADOHelper.json-schema",
+    "AxisRepositorySettings": {
+        "RepositorySettings": [{
+            "Name": "",
+            "MasterDevelop": true,
+            "Path": "sadas"
+        }]
+    }
+}
