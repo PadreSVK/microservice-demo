@@ -1,6 +1,6 @@
 using System;
 
-namespace API
+namespace Regulator
 {
     public class WeatherForecast
     {
