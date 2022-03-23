@@ -1,21 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLC.ServiceA", "PLC.ServiceA\PLC.ServiceA.csproj", "{E41A0388-F5E7-4264-8E3F-A015311F9230}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLC.ServiceA", "PLC.ServiceA\PLC.ServiceA.csproj", "{E41A0388-F5E7-4264-8E3F-A015311F9230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLC.ServiceB", "PLC.ServiceB\PLC.ServiceB.csproj", "{3325AA9C-E7FD-4DB9-88EB-2DAE71C0B53C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLC.ServiceB", "PLC.ServiceB\PLC.ServiceB.csproj", "{3325AA9C-E7FD-4DB9-88EB-2DAE71C0B53C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regulator", "Regulator\Regulator.csproj", "{7C150910-2315-42A0-B8A9-14886E2A33AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Regulator", "Regulator\Regulator.csproj", "{7C150910-2315-42A0-B8A9-14886E2A33AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewCsharpFeaturesSamples", "NewCsharpFeaturesSamples\NewCsharpFeaturesSamples.csproj", "{D0FC8C97-C89B-47BF-9E20-15081EF11007}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D7315482-002E-4B3E-B25C-201C0AECD040}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E41A0388-F5E7-4264-8E3F-A015311F9230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +31,15 @@ Global
 		{7C150910-2315-42A0-B8A9-14886E2A33AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C150910-2315-42A0-B8A9-14886E2A33AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C150910-2315-42A0-B8A9-14886E2A33AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0FC8C97-C89B-47BF-9E20-15081EF11007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0FC8C97-C89B-47BF-9E20-15081EF11007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0FC8C97-C89B-47BF-9E20-15081EF11007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0FC8C97-C89B-47BF-9E20-15081EF11007}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E4E12B5-2F75-4ED3-ACA5-BB8138C29847}
 	EndGlobalSection
 EndGlobal
