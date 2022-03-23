@@ -1,0 +1,14 @@
+# tye application configuration file
+# read all about it at https://github.com/dotnet/tye
+#
+# when you've given us a try, we'd love to know what you think:
+#    https://aka.ms/AA7q20u
+#
+name: microservice.demo
+services:
+- name: plc-servicea
+  project: PLC.ServiceA/PLC.ServiceA.csproj
+- name: plc-serviceb
+  project: PLC.ServiceB/PLC.ServiceB.csproj
+- name: regulator
+  project: Regulator/Regulator.csproj
