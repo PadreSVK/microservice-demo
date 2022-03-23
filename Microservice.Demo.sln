@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contrants", "Contrants\Contrants.csproj", "{D9FC5BEC-DA69-4CA3-B919-8B689EBC3E13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{7C150910-2315-42A0-B8A9-14886E2A33AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C150910-2315-42A0-B8A9-14886E2A33AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C150910-2315-42A0-B8A9-14886E2A33AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9FC5BEC-DA69-4CA3-B919-8B689EBC3E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9FC5BEC-DA69-4CA3-B919-8B689EBC3E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9FC5BEC-DA69-4CA3-B919-8B689EBC3E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9FC5BEC-DA69-4CA3-B919-8B689EBC3E13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
