@@ -1,5 +1,12 @@
+using System.Net.Http;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using PLC.ServiceA.HttpClients;
+using Microsoft.Extensions.Hosting;
+using PLC.ServiceA;
+using PLC.ServiceA.Configurations;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +17,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddHostedService<PLCReader>();
+builder.Services.Configure<RegulatorConfiguration>(builder.Configuration.GetSection(nameof(RegulatorConfiguration)));
+
+builder.Services.AddHttpClient<RegulatorClient>();
+
+
 var app = builder.Build();
 
+app.UseRouting();
 // Configure the HTTP request pipeline.
 // if (app.Environment.IsDevelopment())
 {
@@ -22,7 +36,11 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapMetrics();
+    endpoints.MapControllers();
+});
 
-app.MapControllers();
 
 app.Run();

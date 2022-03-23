@@ -21,3 +21,14 @@ services:
       dockerfile: ./Regulator/Dockerfile
     ports:
       - 5000:80
+  
+  rabbit-mq:
+    image: masstransit/rabbitmq:3
+    ports:
+    - 15672:15672
+    - 5672:5672
+  
+  redis:
+    image: redis:6.2.6-alpine3.15
+    ports:
+    - 6000:6379
