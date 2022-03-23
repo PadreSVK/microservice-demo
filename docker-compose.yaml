@@ -2,16 +2,22 @@ version: '3'
 
 services:
   plc-service-a:
-    build: ./PLC.ServiceA
+    build:
+      context: .
+      dockerfile: ./PLC.ServiceA/Dockerfile
     ports:
       - 5002:80
 
   plc-service-b:
-    build: ./PLC.ServiceB
+    build:
+      context: .
+      dockerfile: ./PLC.ServiceB/Dockerfile
     ports:
       - 5003:80
 
   regulator:
-    build: ./Regulator
+    build:
+      context: .
+      dockerfile: ./Regulator/Dockerfile
     ports:
       - 5000:80
