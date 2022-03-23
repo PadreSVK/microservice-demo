@@ -4,14 +4,14 @@ services:
   plc-service-a:
     build: ./PLC.ServiceA
     ports:
-      - "5000:80"
+      - 5002:80
 
   plc-service-b:
     build: ./PLC.ServiceB
     ports:
-      - "5001:80"
+      - 5003:80
 
   regulator:
     build: ./Regulator
     ports:
-      - "80:80"
+      - 5000:80
