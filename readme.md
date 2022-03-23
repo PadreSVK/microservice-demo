@@ -12,3 +12,8 @@
   * PLC service A => BL => PLC service B
   * Endpoint
   * Persistence
+
+## How to project
+
+> docker compose up
+> 
